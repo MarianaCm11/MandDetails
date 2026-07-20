@@ -1,0 +1,18 @@
+.supplier-orders-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.supplier-orders-view .badge-warning-bg {
+  background: rgba(245, 158, 11, 0.05);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.supplier-orders-view .inner-panel {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-surface-elevated);
+  padding: 1.5rem;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--glass-border);
+}

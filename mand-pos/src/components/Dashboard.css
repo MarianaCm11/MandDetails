@@ -1,0 +1,106 @@
+.dashboard-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.dash-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+
+.dash-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.dash-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.dash-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  border: 1px solid var(--glass-border);
+  transition: border-color var(--transition-fast);
+}
+
+.dash-card:hover {
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+.dash-card-wide {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--border-radius-md);
+}
+
+.dash-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--border-radius-full);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--accent-primary);
+  flex-shrink: 0;
+}
+
+.dash-icon-wrap.blue { background: rgba(59, 130, 246, 0.15); color: #3b82f6; }
+.dash-icon-wrap.purple { background: rgba(139, 92, 246, 0.15); color: #8b5cf6; }
+.dash-icon-wrap.green { background: rgba(16, 185, 129, 0.15); color: #10b981; }
+
+.dash-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.dash-label {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.2rem;
+}
+
+.dash-value {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.text-success { color: #10b981 !important; }
+
+.alert-panel {
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  background: linear-gradient(145deg, rgba(245, 158, 11, 0.06), rgba(0, 0, 0, 0.2));
+  padding: 1.5rem;
+  border-radius: var(--border-radius-md);
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
